@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: web-app
-  name: web-app
+    app: argo-web
+  name: argo-web
   namespace: web-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: web-app
+      app: argo-web
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: web-app
+        app: argo-web
     spec:
       containers:
       - image: nginx
