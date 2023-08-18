@@ -7,7 +7,7 @@ metadata:
   name: argo-web
   namespace: web-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: argo-web
